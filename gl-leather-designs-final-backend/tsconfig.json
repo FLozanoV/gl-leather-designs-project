@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2021",                         /* Especifica la versión de ECMAScript a la que se compilará el código. */
+    "module": "commonjs",                       /* Especifica el sistema de módulos para el código generado (CommonJS para Node.js). */
+
+    /* Emit */
+    "outDir": "./dist",                         /* Carpeta de salida para los archivos compilados. */
+    "rootDir": "./src",                         /* Carpeta raíz de tus archivos fuente. */
+
+    /* Interop Constraints */
+    "esModuleInterop": true,                    /* Permite la importación de módulos CommonJS usando la sintaxis de importación de módulos ES (import express from 'express';). */
+    "forceConsistentCasingInFileNames": true,   /* Asegura que la capitalización de los nombres de archivo sea consistente en las importaciones. */
+    "resolveJsonModule": true,                  /* Habilita la importación de archivos .json directamente como módulos. */
+
+    /* Type Checking */
+    "strict": true,                             /* Habilita todas las opciones de comprobación de tipos estrictas (muy recomendado). */
+    // "noImplicitAny": true,                   /* Habilita la notificación de errores para expresiones y declaraciones con un tipo 'any' implícito. */
+    // "strictNullChecks": true,                /* Habilita la comprobación estricta de null y undefined. */
+    // "strictFunctionTypes": true,             /* Habilita la comprobación estricta de los tipos de funciones. */
+    // "strictBindCallApply": true,             /* Comprueba que los argumentos de los métodos 'bind', 'call' y 'apply' coincidan con la función original. */
+    // "strictPropertyInitialization": true,    /* Comprueba las propiedades de clase que se declaran pero no se establecen en el constructor. */
+    // "noImplicitThis": true,                  /* Habilita la notificación de errores cuando 'this' recibe un tipo 'any'. */
+    // "useUnknownInCatchVariables": true,      /* Escribe las variables de cláusula catch como 'unknown' en lugar de 'any'. */
+    // "alwaysStrict": true,                    /* Asegura que 'use strict' se emita en los archivos compilados y habilita el análisis en modo estricto para los archivos JavaScript. */
+    // "noUnusedLocals": true,                  /* Habilita la notificación de errores cuando no se leen las variables locales. */
+    // "noUnusedParameters": true,              /* Habilita la notificación de errores cuando no se lee un parámetro de función. */
+    // "noImplicitReturns": true,               /* Habilita la notificación de errores para las funciones que no tienen una anotación de tipo de retorno y devuelven una expresión en algunas rutas de código y 'undefined' en otras. */
+    // "noFallthroughCasesInSwitch": true,      /* Habilita la notificación de errores para los casos de interrupción en las declaraciones switch. */
+    // "noUncheckedIndexedAccess": true,        /* Agrega 'undefined' al tipo de una propiedad al acceder a una matriz con un índice. */
+    // "noPropertyAccessFromIndexSignature": true, /* Impone el uso de accesores indexados para claves declaradas con una firma de índice de cadena explícita. */
+
+    /* Completeness */
+    "skipLibCheck": true                        /* Omite la comprobación de tipos de todos los archivos .d.ts de la biblioteca (puede acelerar la compilación). */
+  },
+  "include": [
+    "src/**/*.ts",                              /* Incluye todos los archivos TypeScript (.ts) en el directorio src y sus subdirectorios. */
+    "src/types/**/*.d.ts"                       /* Incluye todos los archivos de declaración personalizados (.d.ts) en src/types y sus subdirectorios. */
+  ],
+  "exclude": [
+    "node_modules"                              /* Excluye la carpeta node_modules de la comprobación de tipos y la compilación. */
+  ]
+}
